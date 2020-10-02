@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+#main_game {
+    width: calc(100% - 20px);
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    border: 1px solid #63b866;
+    -webkit-box-shadow: 7px 9px 5px 6px rgba(204, 204, 204, 0.68);
+    box-shadow: 7px 9px 5px 6px rgba(204, 204, 204, 0.68);
+    position: relative;
+}
+
+.clearFix {
+    clear: both;
+}
+
+.btn {
+    background-color: #efefef;
+    border-radius: 0.3em;
+    border: 1px solid #dddddd;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: #71c8ea;
+}
+
+.btn:active {
+    background-color: #efefef;
+    border-radius: 0.3em;
+    border: 1px solid #dddddd;
+}
+
+#main_game .level {
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #71c8ea;
+}
+
+#main_game .menu {
+    text-align: center;
+    float: left;
+    width: 100%;
+    display: block;
+    background: #87bb5f;
+    border: 1px solid #63b866;
+    padding: 10px;
+}
+
+#main_game .left {
+    float: left;
+}
+
+#main_game .right {
+    float: right;
+}
+
+#main_game #game_container {
+    width: 100%;
+    float: left;
+    min-height: 200px;
+    background: #f7f4f4;
+    border: 1px solid #bbb;
+}
+
+.cube {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.2em;
+    background: #efefef;
+    border: 1px solid #71c8ea;
+}
+
+#main_game .cube,
+#main_game .btn {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#game_footer .cube {
+    cursor: pointer;
+}
+#game_footer .cube:hover{
+    position:relative;
+    top: -2px;
+}
+
+#main_game #game_footer {
+    text-align: center;
+    float: left;
+    width: 100%;
+    background: #ccc;
+    padding: 10px;
+}
+
+.cube[data-id="0"] {
+    background: #33a8c7;
+}
+
+.cube[data-id="1"] {
+    background: #52e3e1;
+}
+
+.cube[data-id="2"] {
+    background: #a0e426;
+}
+
+.cube[data-id="3"] {
+    background: #fdf148;
+}
+
+.cube[data-id="4"] {
+    background: #ffab00;
+}
+
+.cube[data-id="5"] {
+    background: #f77976;
+}
+
+.cube[data-id="6"] {
+    background: #f050ae;
+}
+
+.cube[data-id="7"] {
+    background: #d883ff;
+}
+
+.cube[data-id="8"] {
+    background: #bc3908;
+}
+
+.cube[data-id="9"] {
+    background: #6b9080;
+}
+
+.cube[data-id="10"] {
+    background: #000;
+}
+
+.cubes_row {
+    float: left;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cubes_row .validation {
+    font-size: 13px;
+}
+
+#main_game .info {
+    display: none;
+    position: absolute;
+    top: 2px;
+    background: #fff;
+    width: 98%;
+    left: 1%;
+    height: 99%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
